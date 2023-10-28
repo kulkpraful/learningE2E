@@ -20,7 +20,7 @@ public class UserController {
         String userName  = userDetails.get(0);
         String emailId = userDetails.get(1);
         if(!userDetails.isEmpty()){
-            return  ResponseEntity.ok("User details: " + userName + " and " + emailId);
+            return  ResponseEntity.ok("User Name : " + userName + " and emailID: " + emailId);
         }else{
             return ResponseEntity.badRequest().body("No record found for userId: " + userId);
         }
